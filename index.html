@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Kuhafox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+
+   
+    <div class="container">
+       
+        <aside class="perfil">  
+            <img src="DAVID.jpeg" alt="Minha Foto">
+        </aside>
+
+        
+        <section class="conteudo">
+            <nav>
+                <ul>
+                    
+                    <li><a href="#" onclick="mostrarConteudo('home')">Home</a></li>
+                    <li>|</li>
+                    <li><a href="#" onclick="mostrarConteudo('contato')">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <hr class="linha-vermelha">
+
+            <article>
+                <div id="home" class="secao">
+                    <h2>Sobre Mim</h2>
+                    <p>
+                        Sou um jovem Garboso de 25 anos que ama tecnologia, gosto de jogar jogos mobile e de Computador.
+                    </p>
+                </div>
+
+                <div id="contato" class="secao" style="display: none;">
+                    <h2>Contato</h2>
+                    <p>E-mail: ddc2@aluno.ifnmg.edu.br</p>
+                    <footer>@Feito no Quilombo de Candeal</footer>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <script>
+        function mostrarConteudo(secao) {
+        
+            document.querySelectorAll('.secao').forEach(el => el.style.display = 'none');
+        
+            document.getElementById(secao).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
